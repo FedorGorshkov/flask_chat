@@ -1,0 +1,71 @@
+.message {
+    font-family: Bradley Hand, cursive;
+    position: relative;
+    color: #575757;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.message_time {
+    font-family: Bradley Hand, cursive;
+    position: relative;
+    color: #adadad;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.header {
+    font-family: Marker Felt, fantasy;
+}
+
+.button {
+  background-color: #a1a2ff;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+
+.button2 {
+  background-color: #a1a2ff;
+  border: none;
+  color: black;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form {
+    margin-left: 120px;
+    margin-right: auto;
+    background-color: #a1a2ff;
+    position: fixed;
+    z-index: 100;
+    bottom: 3px;
+    border: 0px;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 1.8em;
+    width: 400px;
+}
+
+.input2 {
+    width: 200px;
+    height: 25px;
+}

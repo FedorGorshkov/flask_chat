@@ -1,0 +1,26 @@
+.button_login {
+  background-color :#c3c3c3;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #a1a2ff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.right_down_text {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}

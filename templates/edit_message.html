@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../static/css/chat.css"/>
+</head>
+<body>
+    <p style="margin-bottom : none;"> </p>
+    <form class="login_form" method="post">
+        <input style="width: 500px; height: 30px; font-size: 15px;" class="form_control" type="text" id="new_message" autocomplete="off"
+               placeholder={{message}} name="new_message">
+        <p style="margin-bottom : none;"></p>
+        <button style="margin-top: 10px; display: inline-block; width: 200pxl; height = 50px;" type="submit" class="button">Сохранить и вернуться</button>
+        <input style="display: inline-block; margin-top: 15px; width: 200px; height = 50px; margin-left: 20px;" align="left" class="button" type="button" value="Вернуться в чат" onClick='location.href="http://127.0.0.1:8080/chat"'>
+    </form>
+
+</body>
+</html>
