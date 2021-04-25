@@ -128,6 +128,7 @@ def edit_message(message_id):
 
 @app.route('/message_delete/<int:message_id>')
 def delete_message(message_id):
+    # for commit lol
     db_sess = db_session.create_session()
     message = db_sess.query(Messages).filter(Messages.id == message_id).first()
     db_sess.delete(message)
