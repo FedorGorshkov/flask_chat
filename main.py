@@ -149,5 +149,4 @@ def account():
 if __name__ == '__main__':
     db_session.global_init("db/chat.db")
     app.register_blueprint(chat_api.blueprint)
-    # serve(app, host='0.0.0.0', port=8080)
-    app.run()
+    serve(app, host='0.0.0.0', port=8080)
