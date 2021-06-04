@@ -4,6 +4,7 @@ from data.messages import Messages
 from data import chat_api
 from flask import Flask, url_for, request, render_template, redirect, make_response, jsonify
 import os
+import datetime
 from waitress import serve
 
 app = Flask(__name__)
@@ -80,6 +81,7 @@ def chat():
         message.content = request.form["message"]
         user = db_sess.query(User).filter(User.id == int(request.cookies.get('user_id'))).first()
         message.user_name = user.name
+        message.created_date = datetime.datetime.now().strftime("%H:%M")
         db_sess.add(message)
         db_sess.commit()
         return redirect('#bar')
@@ -122,13 +124,13 @@ def edit_message(message_id):
         db_sess = db_session.create_session()
         message = db_sess.query(Messages).filter(Messages.id == int(message_id)).first()
         message.content = request.form["new_message"]
+        message.created_date = datetime.datetime.now().strftime("%H:%M")
         db_sess.commit()
         return res
 
 
 @app.route('/message_delete/<int:message_id>')
 def delete_message(message_id):
-    # for commit lol
     db_sess = db_session.create_session()
     message = db_sess.query(Messages).filter(Messages.id == message_id).first()
     db_sess.delete(message)
@@ -147,4 +149,5 @@ def account():
 if __name__ == '__main__':
     db_session.global_init("db/chat.db")
     app.register_blueprint(chat_api.blueprint)
-    serve(app, host='0.0.0.0', port=8080)
+    # serve(app, host='0.0.0.0', port=8080)
+    app.run()

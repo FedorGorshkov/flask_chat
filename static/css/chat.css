@@ -1,9 +1,9 @@
 .message {
     font-family: Bradley Hand, cursive;
     position: relative;
-    color: #575757;
+    color: #000000;
     text-align: left;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     padding-left: 50px;
     margin: 0;
@@ -12,12 +12,13 @@
 .message_time {
     font-family: Bradley Hand, cursive;
     position: relative;
-    color: #adadad;
+    color: #a1a2ff;
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     padding-left: 50px;
     margin: 0;
+    text-shadow: black 0 2px;
 }
 
 .header {

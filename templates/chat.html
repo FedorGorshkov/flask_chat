@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="../../static/css/chat.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Чат</title>
+    <style>
+        body {
+            background: url(../../static/images/background.png)
+        }
+    </style>
     <script language="javascript" src="../../static/script.js"></script>
     <script language="javascript" src="../../static/show_widget.js"></script>
     <script language="JavaScript">
@@ -35,8 +40,8 @@
     </script>
 </head>
 <body onload="setInterval(refresh, 3000);">
-<input align="right" class="button" type="button" value="Личный кабинет" style="padding-right: 50px"
-       onClick='location.href="http://127.0.0.1:8080/account"'>
+<b><input align="right" class="button" type="button" value="Личный кабинет" style="padding-right: 50px"
+       onClick='location.href="http://127.0.0.1:8080/account"'> </b>
 {% block content %}
 <h1 align="center" class="header"><big>Чатик</big></h1>
 <div id="messages">
@@ -57,6 +62,9 @@
     {% endfor %}
 </div>
 {% endblock %}
+<br style="margin-left: 80px;" class="message"></br>
+<br style="margin-left: 80px;" class="message"></br>
+<br style="margin-left: 80px;" class="message"></br>
 <section id="bar"></section>
 <form class="form" method="post">
     <input type="text" class="input2" id="message" autocomplete="off" size="30"

@@ -12,6 +12,5 @@ class Messages(SqlAlchemyBase, SerializerMixin):
     id = sqlalchemy.Column(sqlalchemy.Integer,
                            primary_key=True, autoincrement=True)
     content = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    created_date = sqlalchemy.Column(sqlalchemy.String,
-                                     default=datetime.datetime.now().strftime('%H:%M'))
+    created_date = sqlalchemy.Column(sqlalchemy.String)
     user_name = sqlalchemy.Column(sqlalchemy.String)
